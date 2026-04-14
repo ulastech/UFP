@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi & Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan & Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Kontak</div>
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap membantu Anda dengan informasi program, pendaftaran, atau kerja sama</p>
+  </div>
+</div>
+<div class="page-content">
+  <div class="kontak-grid">
+    <div>
+      <div class="content-box">
+        <h2>📋 Informasi Kontak</h2>
+        <div style="display:flex;flex-direction:column;gap:18px;margin-top:16px;">
+          <div class="info-item" style="background:#F9F5EE;border-radius:10px;padding:14px;display:flex;gap:14px;align-items:flex-start;"><span style="font-size:1.5rem">📍</span><div><strong>Alamat</strong><br><span style="color:#6B6B6B;font-size:0.9rem">RSCM Gedung H Lt. 2<br>Jl. Diponegoro No. 71, Jakarta Pusat 10430</span></div></div>
+          <div class="info-item" style="background:#F9F5EE;border-radius:10px;padding:14px;display:flex;gap:14px;align-items:flex-start;"><span style="font-size:1.5rem">📞</span><div><strong>Telepon</strong><br><span style="color:#6B6B6B;font-size:0.9rem">(021) 1500-135<br>0851-7989-5686</span></div></div>
+          <div class="info-item" style="background:#F9F5EE;border-radius:10px;padding:14px;display:flex;gap:14px;align-items:flex-start;"><span style="font-size:1.5rem">✉️</span><div><strong>Email</strong><br><span style="color:#6B6B6B;font-size:0.9rem">komkordikrscm@gmail.com<br>info@ufp.my.id</span></div></div>
+          <div class="info-item" style="background:#F9F5EE;border-radius:10px;padding:14px;display:flex;gap:14px;align-items:flex-start;"><span style="font-size:1.5rem">🕐</span><div><strong>Jam Operasional</strong><br><span style="color:#6B6B6B;font-size:0.9rem">Senin – Jumat: 07.00 – 16.00<br>Sabtu: 07.00 – 12.00</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="content-box">
+      <h2>✉️ Kirim Pesan</h2>
+      <div class="form-group" style="margin-top:16px;">
+        <div class="form-row">
+          <input type="text" placeholder="Nama Lengkap">
+          <input type="email" placeholder="Alamat Email">
+        </div>
+        <input type="text" placeholder="Nomor Telepon">
+        <select><option value="" disabled selected>Pilih Keperluan</option><option>Informasi Program</option><option>Pendaftaran</option><option>Kerja Sama</option><option>Lainnya</option></select>
+        <textarea placeholder="Tuliskan pesan Anda di sini..."></textarea>
+        <button class="btn-primary" onclick="kirimPesan()" style="border:none;cursor:pointer;text-align:center;padding:14px;">Kirim Pesan →</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi & Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

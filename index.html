@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Fungsional Pendidikan RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="logo.png" alt="Logo UFP RSCM" onerror="this.style.display='none'">
+      <span class="brand-text">UFP RSCM</span>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Beranda</a></li>
+      <li class="dropdown">
+        <a href="#">Profil ▾</a>
+        <ul class="submenu">
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="visi-misi.html">Visi &amp; Misi</a></li>
+          <li><a href="struktur.html">Struktur Organisasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Program ▾</a>
+        <ul class="submenu">
+          <li><a href="program.html">Program Pendidikan</a></li>
+          <li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li>
+          <li><a href="penelitian.html">Penelitian</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Kegiatan ▾</a>
+        <ul class="submenu">
+          <li><a href="jadwal.html">Jadwal Kegiatan</a></li>
+          <li><a href="pengumuman.html">Pengumuman</a></li>
+        </ul>
+      </li>
+      <li><a href="berita.html">Berita</a></li>
+      <li><a href="dokumen.html">Dokumen</a></li>
+      <li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">● Unit Fungsional Pendidikan</div>
+      <h1>Unit Fungsional<br>Pendidikan <span>RSCM</span></h1>
+      <p>Pusat pengembangan pendidikan yang berfokus pada kualitas, inovasi, dan pemberdayaan seluruh komponen pendidikan demi generasi unggul bangsa.</p>
+      <div class="hero-actions">
+        <a href="program.html" class="btn-primary">Lihat Program</a>
+        <a href="visi-misi.html" class="btn-outline">Pelajari Lebih</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-inner">
+        <h3>📋 Informasi Singkat</h3>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-icon">🏛️</span>
+            <div>
+              <div class="info-title">Unit Fungsional Pendidikan</div>
+              <div class="info-sub">RSUP Nasional Dr. Cipto Mangunkusumo</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <div class="info-title">Lokasi</div>
+              <div class="info-sub">Jl. Diponegoro No. 71, Jakarta Pusat</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📞</span>
+            <div>
+              <div class="info-title">Telepon</div>
+              <div class="info-sub">(021) 1500-135</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div>
+              <div class="info-title">Email</div>
+              <div class="info-sub">info@ufp.my.id</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISI MISI TARGET -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Tentang Kami</span>
+      <h2>Komitmen Kami untuk Pendidikan</h2>
+      <p>"Melayani dan Memberikan yang Terbaik"</p>
+    </div>
+    <div class="card-grid-3">
+      <div class="card-item">
+        <div class="card-img">🎯</div>
+        <h3>Visi</h3>
+        <p>Menjadi unit pendidikan terdepan yang melahirkan generasi unggul, berkarakter, dan berdaya saing di tingkat nasional dan internasional.</p>
+      </div>
+      <div class="card-item">
+        <div class="card-img">🎖️</div>
+        <h3>Target</h3>
+        <p>Penjaminan SDM Kesehatan yang kompeten dan andal dalam menyongsong perubahan serta mengikuti perkembangan ilmu pengetahuan dan teknologi.</p>
+      </div>
+      <div class="card-item">
+        <div class="card-img">🏆</div>
+        <h3>Sasaran</h3>
+        <p>Mewujudkan SDM Kesehatan unggul dalam mendukung penyelenggaraan fasilitas pelayanan kesehatan yang terpercaya dan berkualitas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KOMITMEN -->
+<section class="section-dark">
+  <div class="container">
+    <div class="komitmen-grid">
+      <div class="komitmen-text">
+        <span class="section-label-light">Komitmen UFP RSCM</span>
+        <h2 class="white">Membangun SDM Pendidikan Berkualitas</h2>
+        <p class="muted">UFP RSCM hadir untuk turut serta dalam membangun dan menciptakan sumber daya manusia kesehatan yang kompeten melalui kegiatan pendidikan baik internal maupun eksternal RSCM untuk memenuhi standar mutu pelayanan kesehatan bagi masyarakat Indonesia.</p>
+        <p class="muted">Kami berupaya mengembangkan program pendidikan, tenaga pendidik, dan kerja sama dengan organisasi profesi, institusi pemerintah, serta lembaga pendidikan lainnya.</p>
+        <a href="visi-misi.html" class="btn-teal">Selengkapnya →</a>
+      </div>
+      <div class="stats-box">
+        <div class="stat-item">
+          <div class="stat-num">1.200+</div>
+          <div class="stat-label">Peserta Didik</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">85</div>
+          <div class="stat-label">Tenaga Pendidik</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">12</div>
+          <div class="stat-label">Program Aktif</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Program Kami</span>
+      <h2>Ragam Program Pendidikan</h2>
+      <p>Dirancang untuk mengoptimalkan setiap bakat dan minat peserta didik</p>
+    </div>
+    <div class="card-grid-3">
+      <div class="program-card">
+        <div class="prog-icon">💻</div>
+        <h3>Teknologi &amp; Informatika</h3>
+        <p>Pemrograman, literasi digital, robotika, dan kecerdasan buatan untuk generasi digital yang kompeten.</p>
+        <a href="program.html" class="card-link">Selengkapnya →</a>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon">🔬</div>
+        <h3>Sains &amp; Riset</h3>
+        <p>Pembelajaran berbasis eksperimen dan penelitian ilmiah untuk menumbuhkan jiwa saintis muda.</p>
+        <a href="program.html" class="card-link">Selengkapnya →</a>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon">⚕️</div>
+        <h3>Kesehatan &amp; Medis</h3>
+        <p>Program edukasi kesehatan dan medis dasar untuk mendukung lingkungan RSCM yang sehat.</p>
+        <a href="program.html" class="card-link">Selengkapnya →</a>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon">📊</div>
+        <h3>Manajemen &amp; Administrasi</h3>
+        <p>Pengelolaan administrasi rumah sakit dan manajemen layanan kesehatan yang profesional.</p>
+        <a href="program.html" class="card-link">Selengkapnya →</a>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon">🌍</div>
+        <h3>Bahasa &amp; Komunikasi</h3>
+        <p>Penguatan kemampuan bahasa Indonesia dan Inggris melalui metode komunikatif dan immersif.</p>
+        <a href="program.html" class="card-link">Selengkapnya →</a>
+      </div>
+      <div class="program-card">
+        <div class="prog-icon">🎓</div>
+        <h3>Pelatihan Profesi</h3>
+        <p>Program pelatihan dan sertifikasi profesi untuk meningkatkan kompetensi tenaga kesehatan.</p>
+        <a href="pelatihan.html" class="card-link">Selengkapnya →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BERITA -->
+<section class="section-gray">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="section-label">Berita &amp; Kegiatan</span>
+        <h2>Informasi Terkini</h2>
+      </div>
+      <a href="berita.html" class="btn-outline-dark">Semua Berita →</a>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#0B1F3A,#122848)">🏆</div>
+        <div class="news-body">
+          <span class="news-cat">Prestasi</span>
+          <h3><a href="berita.html">Tim UFP RSCM Raih Penghargaan Pendidikan Nasional</a></h3>
+          <p>UFP RSCM berhasil meraih penghargaan dalam ajang pendidikan dan pelatihan kesehatan tingkat nasional 2026.</p>
+          <div class="news-meta">📅 10 April 2026</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#1a5c2a,#0d3318)">📢</div>
+        <div class="news-body">
+          <span class="news-cat">Pengumuman</span>
+          <h3><a href="berita.html">Pendaftaran Program Pelatihan Tahun 2026/2027 Dibuka</a></h3>
+          <p>Pendaftaran resmi dibuka mulai 1 Mei 2026. Kuota terbatas, segera daftarkan diri Anda.</p>
+          <div class="news-meta">📅 5 April 2026</div>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-thumb" style="background:linear-gradient(135deg,#5c1a1a,#330d0d)">🎓</div>
+        <div class="news-body">
+          <span class="news-cat">Kegiatan</span>
+          <h3><a href="berita.html">Workshop Literasi Digital untuk Tenaga Kesehatan</a></h3>
+          <p>UFP RSCM mengadakan workshop literasi digital gratis bagi seluruh tenaga kesehatan RSCM.</p>
+          <div class="news-meta">📅 1 April 2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section-light">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-label">Testimoni</span>
+      <h2>Kesan dari Peserta Didik</h2>
+      <p>Simak kesan-kesan dari peserta yang mengikuti program kami</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-avatar">👨‍⚕️</div>
+        <h4>Dr. Ahmad Fauzi</h4>
+        <span class="testi-role">Dokter Residen</span>
+        <p>"Program pendidikan UFP RSCM sangat membantu dalam meningkatkan kompetensi klinis. Metode pembelajaran yang inovatif dan tenaga pengajar yang profesional."</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-avatar">👩‍⚕️</div>
+        <h4>Ns. Sari Dewi, S.Kep</h4>
+        <span class="testi-role">Perawat</span>
+        <p>"Pelatihan yang difasilitasi dengan baik menjadikan pengalaman ini sangat bermanfaat. UFP RSCM melayani peserta dengan informasi yang lengkap."</p>
+      </div>
+      <div class="testi-card">
+        <div class="testi-avatar">👨‍🔬</div>
+        <h4>Budi Santoso, AMd</h4>
+        <span class="testi-role">Analis Kesehatan</span>
+        <p>"Memiliki sertifikat kompetensi dari program UFP RSCM dapat menambah nilai profesionalitas dan kepercayaan dalam dunia kerja."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Logo UFP RSCM" onerror="this.style.display='none'">
+      <h3>Unit Fungsional Pendidikan RSCM</h3>
+      <p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p>
+      <div class="footer-contact">
+        <span>📞 (021) 1500-135</span>
+        <span>✉️ info@ufp.my.id</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Profil</h4>
+      <ul>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="visi-misi.html">Visi &amp; Misi</a></li>
+        <li><a href="struktur.html">Struktur Organisasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Program</h4>
+      <ul>
+        <li><a href="program.html">Program Pendidikan</a></li>
+        <li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li>
+        <li><a href="penelitian.html">Penelitian</a></li>
+        <li><a href="jadwal.html">Jadwal Kegiatan</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informasi</h4>
+      <ul>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="pengumuman.html">Pengumuman</a></li>
+        <li><a href="dokumen.html">Dokumen</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
