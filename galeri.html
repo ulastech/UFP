@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .galeri-tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+    .tab-btn { padding: 9px 20px; border-radius: 100px; border: 2px solid var(--border); background: var(--white); font-size: 0.85rem; font-weight: 600; cursor: pointer; color: var(--muted); transition: all 0.2s; font-family: inherit; }
+    .tab-btn.active, .tab-btn:hover { background: var(--teal); border-color: var(--teal); color: var(--white); }
+    .galeri-full { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .galeri-box { border-radius: 14px; overflow: hidden; position: relative; aspect-ratio: 4/3; cursor: pointer; }
+    .galeri-box-bg { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; transition: transform 0.3s; }
+    .galeri-box:hover .galeri-box-bg { transform: scale(1.05); }
+    .galeri-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.75)); padding: 20px 14px 14px; color: var(--white); font-size: 0.82rem; font-weight: 600; opacity: 0; transition: opacity 0.3s; }
+    .galeri-box:hover .galeri-caption { opacity: 1; }
+    .galeri-box.wide { grid-column: span 2; }
+    .galeri-box.tall { grid-row: span 2; }
+    @media(max-width:768px) { .galeri-full { grid-template-columns: 1fr 1fr; } .galeri-box.wide { grid-column: span 1; } }
+    @media(max-width:480px) { .galeri-full { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li class="dropdown"><a href="#">Kegiatan ▾</a><ul class="submenu"><li><a href="jadwal.html">Jadwal Kegiatan</a></li><li><a href="pengumuman.html">Pengumuman</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Profil <span>›</span> Galeri</div>
+    <h1>Galeri</h1>
+    <p>Dokumentasi kegiatan, fasilitas, dan momen berharga UFP RSCM</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="content-box">
+    <div class="galeri-tabs">
+      <button class="tab-btn active">Semua</button>
+      <button class="tab-btn">Kegiatan</button>
+      <button class="tab-btn">Fasilitas</button>
+      <button class="tab-btn">Wisuda</button>
+      <button class="tab-btn">Workshop</button>
+    </div>
+
+    <div class="galeri-full">
+      <div class="galeri-box wide"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#0B1F3A,#122848)">🎓</div><div class="galeri-caption">Wisuda Peserta Didik Angkatan 2025</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#1a5c2a,#0d3318)">🔬</div><div class="galeri-caption">Laboratorium Sains</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#5c1a1a,#330d0d)">🏥</div><div class="galeri-caption">Fasilitas Simulasi Klinik</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#1a3a6b,#0d2244)">📚</div><div class="galeri-caption">Perpustakaan Digital</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#3a1a6b,#1a0d44)">💻</div><div class="galeri-caption">Laboratorium Komputer</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#6b3a1a,#3a1a0d)">🤝</div><div class="galeri-caption">Seminar Nasional 2025</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#1a6b3a,#0d4422)">🎤</div><div class="galeri-caption">Workshop Literasi Digital</div></div>
+      <div class="galeri-box wide"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#2a3a6b,#152060)">🏆</div><div class="galeri-caption">Penerimaan Penghargaan Nasional 2026</div></div>
+      <div class="galeri-box"><div class="galeri-box-bg" style="background:linear-gradient(135deg,#6b2a1a,#3a150d)">⚕️</div><div class="galeri-caption">Praktik Klinik Keperawatan</div></div>
+    </div>
+
+    <p style="text-align:center; color:var(--muted); margin-top:24px; font-size:0.875rem;">
+      💡 Untuk menambah foto nyata, ganti emoji di atas dengan tag &lt;img&gt; sesuai foto yang diunggah ke GitHub.
+    </p>
+  </div>
+</div>
+
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li><li><a href="jadwal.html">Jadwal Kegiatan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="pengumuman.html">Pengumuman</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

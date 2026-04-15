@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumen - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .dokumen-section { margin-bottom: 40px; }
+    .dokumen-section h3 { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--teal); display: flex; align-items: center; gap: 10px; }
+    .dokumen-list { display: flex; flex-direction: column; gap: 10px; }
+    .dokumen-item { display: flex; align-items: center; gap: 16px; background: var(--cream); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; transition: border-color 0.2s, background 0.2s; }
+    .dokumen-item:hover { border-color: var(--teal); background: rgba(42,168,126,0.04); }
+    .doc-icon { width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .doc-icon.pdf { background: rgba(220,38,38,0.1); }
+    .doc-icon.doc { background: rgba(37,99,235,0.1); }
+    .doc-icon.xls { background: rgba(22,163,74,0.1); }
+    .doc-name { font-size: 0.9rem; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+    .doc-meta { font-size: 0.75rem; color: var(--muted); }
+    .doc-download { margin-left: auto; background: var(--teal); color: var(--white); padding: 7px 16px; border-radius: 8px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; transition: background 0.2s; flex-shrink: 0; }
+    .doc-download:hover { background: var(--teal-light); color: var(--white); }
+    .search-bar { display: flex; gap: 12px; margin-bottom: 28px; }
+    .search-bar input { flex: 1; }
+    .search-bar button { background: var(--teal); color: var(--white); border: none; padding: 12px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; font-family: inherit; font-size: 0.9rem; }
+    @media(max-width:600px) { .doc-download { display: none; } }
+  </style>
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li class="dropdown"><a href="#">Kegiatan ▾</a><ul class="submenu"><li><a href="jadwal.html">Jadwal Kegiatan</a></li><li><a href="pengumuman.html">Pengumuman</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Dokumen</div>
+    <h1>Dokumen</h1>
+    <p>Unduh dokumen resmi, formulir, dan panduan dari Unit Fungsional Pendidikan RSCM</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="content-box">
+    <div class="search-bar">
+      <input type="text" placeholder="🔍  Cari dokumen...">
+      <button>Cari</button>
+    </div>
+
+    <!-- FORMULIR PENDAFTARAN -->
+    <div class="dokumen-section">
+      <h3>📋 Formulir Pendaftaran</h3>
+      <div class="dokumen-list">
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Formulir Pendaftaran Program Pendidikan 2026/2027</div><div class="doc-meta">PDF · 245 KB · Diperbarui 1 April 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Formulir Pendaftaran Pelatihan &amp; Workshop</div><div class="doc-meta">PDF · 198 KB · Diperbarui 1 Maret 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Formulir Permohonan Beasiswa Pendidikan Lanjut</div><div class="doc-meta">PDF · 312 KB · Diperbarui 1 Maret 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon doc">📝</div>
+          <div><div class="doc-name">Formulir Pernyataan Komitmen Peserta Didik</div><div class="doc-meta">DOC · 87 KB · Diperbarui 15 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PANDUAN & PEDOMAN -->
+    <div class="dokumen-section">
+      <h3>📚 Panduan &amp; Pedoman</h3>
+      <div class="dokumen-list">
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Buku Panduan Peserta Didik UFP RSCM 2026</div><div class="doc-meta">PDF · 1.2 MB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Pedoman Penulisan Karya Tulis Ilmiah</div><div class="doc-meta">PDF · 876 KB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Tata Tertib dan Peraturan Peserta Didik</div><div class="doc-meta">PDF · 432 KB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Panduan Penggunaan Portal Akademik</div><div class="doc-meta">PDF · 654 KB · Diperbarui 15 Februari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- KURIKULUM -->
+    <div class="dokumen-section">
+      <h3>🎓 Kurikulum &amp; Silabus</h3>
+      <div class="dokumen-list">
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Kurikulum Program Pendidikan Keperawatan 2026</div><div class="doc-meta">PDF · 2.1 MB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Silabus Program Farmasi Klinik</div><div class="doc-meta">PDF · 1.4 MB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Kurikulum Teknologi Kesehatan &amp; Informatika</div><div class="doc-meta">PDF · 1.8 MB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAPORAN -->
+    <div class="dokumen-section">
+      <h3>📊 Laporan &amp; Publikasi</h3>
+      <div class="dokumen-list">
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Laporan Tahunan UFP RSCM 2025</div><div class="doc-meta">PDF · 4.5 MB · Diperbarui 1 Februari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon xls">📊</div>
+          <div><div class="doc-name">Data Statistik Peserta Didik 2020–2025</div><div class="doc-meta">XLS · 345 KB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+        <div class="dokumen-item">
+          <div class="doc-icon pdf">📄</div>
+          <div><div class="doc-name">Profil UFP RSCM 2026</div><div class="doc-meta">PDF · 3.2 MB · Diperbarui 1 Januari 2026</div></div>
+          <a href="#" class="doc-download">⬇ Unduh</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:rgba(42,168,126,0.08); border:1px solid rgba(42,168,126,0.2); border-radius:10px; padding:16px 20px; margin-top:10px;">
+      <p style="font-size:0.875rem; color:var(--muted);">💡 <strong>Catatan:</strong> Untuk dokumen yang memerlukan otentikasi atau dokumen khusus yang tidak tersedia di sini, silakan hubungi kami melalui halaman <a href="kontak.html">Kontak</a>.</p>
+    </div>
+  </div>
+</div>
+
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li><li><a href="jadwal.html">Jadwal Kegiatan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="pengumuman.html">Pengumuman</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelatihan & Workshop - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .pelatihan-card { background: var(--white); border-radius: 14px; border: 1px solid var(--border); overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+    .pelatihan-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11,31,58,0.1); }
+    .pelatihan-header { background: var(--navy); padding: 20px 24px; display: flex; align-items: center; gap: 14px; }
+    .pelatihan-icon { font-size: 2rem; }
+    .pelatihan-header h3 { color: var(--white); font-size: 1rem; font-weight: 700; }
+    .pelatihan-header span { color: rgba(255,255,255,0.55); font-size: 0.78rem; }
+    .pelatihan-body { padding: 20px 24px; }
+    .pelatihan-body p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .pelatihan-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+    .meta-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 600; color: var(--teal); background: rgba(42,168,126,0.1); padding: 4px 10px; border-radius: 100px; }
+  </style>
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li class="dropdown"><a href="#">Kegiatan ▾</a><ul class="submenu"><li><a href="jadwal.html">Jadwal Kegiatan</a></li><li><a href="pengumuman.html">Pengumuman</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Program <span>›</span> Pelatihan &amp; Workshop</div>
+    <h1>Pelatihan &amp; Workshop</h1>
+    <p>Program pelatihan profesional untuk meningkatkan kompetensi tenaga kesehatan RSCM</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="card-grid-3" style="margin-bottom:30px;">
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">⚕️</span><div><h3>Pelatihan Kegawatdaruratan</h3><span>Basic Life Support (BLS)</span></div></div>
+      <div class="pelatihan-body"><p>Pelatihan penanganan kegawatdaruratan medis dasar meliputi resusitasi jantung paru, penanganan syok, dan manajemen jalan napas untuk seluruh tenaga kesehatan.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 2 Hari</span><span class="meta-tag">👥 30 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">💊</span><div><h3>Pelatihan Farmasi Klinik</h3><span>Clinical Pharmacy Practice</span></div></div>
+      <div class="pelatihan-body"><p>Pelatihan praktik farmasi klinik modern meliputi farmakokinetik, interaksi obat, dan konseling pasien untuk meningkatkan keamanan penggunaan obat di rumah sakit.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 3 Hari</span><span class="meta-tag">👥 25 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">💻</span><div><h3>Workshop Rekam Medis Digital</h3><span>Electronic Health Records</span></div></div>
+      <div class="pelatihan-body"><p>Workshop implementasi rekam medis elektronik dan sistem informasi rumah sakit untuk meningkatkan efisiensi layanan dan keakuratan data kesehatan pasien.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 2 Hari</span><span class="meta-tag">👥 40 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">🧠</span><div><h3>Pelatihan Kesehatan Mental</h3><span>Mental Health First Aid</span></div></div>
+      <div class="pelatihan-body"><p>Pelatihan pertolongan pertama kesehatan mental untuk tenaga kesehatan dalam menghadapi pasien dengan gangguan jiwa dan kondisi psikologis darurat.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 2 Hari</span><span class="meta-tag">👥 35 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">🔬</span><div><h3>Workshop Penelitian Klinis</h3><span>Clinical Research Methods</span></div></div>
+      <div class="pelatihan-body"><p>Workshop metodologi penelitian klinis meliputi desain penelitian, analisis data, penulisan publikasi ilmiah, dan etika penelitian kesehatan.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 4 Hari</span><span class="meta-tag">👥 20 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+    <div class="pelatihan-card">
+      <div class="pelatihan-header"><span class="pelatihan-icon">🏥</span><div><h3>Manajemen Mutu RS</h3><span>Hospital Quality Management</span></div></div>
+      <div class="pelatihan-body"><p>Pelatihan manajemen mutu dan keselamatan pasien berdasarkan standar akreditasi nasional dan internasional untuk meningkatkan kualitas layanan rumah sakit.</p><div class="pelatihan-meta"><span class="meta-tag">⏱ 3 Hari</span><span class="meta-tag">👥 30 Peserta</span><span class="meta-tag">✅ Bersertifikat</span></div></div>
+    </div>
+  </div>
+
+  <div class="content-box">
+    <h2>📋 Cara Mendaftar Pelatihan</h2>
+    <ul>
+      <li>Hubungi koordinator pelatihan melalui email atau telepon</li>
+      <li>Isi formulir pendaftaran pelatihan yang tersedia</li>
+      <li>Lampirkan surat tugas dari unit kerja</li>
+      <li>Konfirmasi kehadiran minimal 3 hari sebelum pelaksanaan</li>
+      <li>Peserta yang memenuhi syarat akan mendapat sertifikat kompetensi</li>
+    </ul>
+    <div style="margin-top:20px;"><a href="kontak.html" class="btn-primary">Daftar Pelatihan →</a></div>
+  </div>
+</div>
+
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li><li><a href="jadwal.html">Jadwal Kegiatan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="pengumuman.html">Pengumuman</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

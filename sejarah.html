@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .timeline { position: relative; padding-left: 40px; margin-top: 30px; }
+    .timeline::before { content: ''; position: absolute; left: 16px; top: 0; bottom: 0; width: 2px; background: var(--teal); opacity: 0.3; }
+    .timeline-item { position: relative; margin-bottom: 36px; }
+    .timeline-dot { position: absolute; left: -32px; top: 4px; width: 16px; height: 16px; border-radius: 50%; background: var(--teal); border: 3px solid var(--white); box-shadow: 0 0 0 3px var(--teal); }
+    .timeline-year { font-size: 0.78rem; font-weight: 800; color: var(--teal); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+    .timeline-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .timeline-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+  </style>
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li class="dropdown"><a href="#">Kegiatan ▾</a><ul class="submenu"><li><a href="jadwal.html">Jadwal Kegiatan</a></li><li><a href="pengumuman.html">Pengumuman</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Profil <span>›</span> Sejarah</div>
+    <h1>Sejarah UFP RSCM</h1>
+    <p>Perjalanan panjang Unit Fungsional Pendidikan RSCM dalam membangun pendidikan kesehatan berkualitas</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="content-box">
+    <h2>🏛️ Latar Belakang</h2>
+    <p>Unit Fungsional Pendidikan RSCM didirikan sebagai wujud komitmen RSUP Nasional Dr. Cipto Mangunkusumo dalam mengembangkan sumber daya manusia di bidang kesehatan yang kompeten, profesional, dan berdaya saing tinggi.</p>
+    <p>Sebagai rumah sakit pendidikan terkemuka di Indonesia, RSCM memiliki tanggung jawab besar dalam menghasilkan tenaga kesehatan yang tidak hanya terampil secara teknis, tetapi juga memiliki karakter dan etika profesi yang kuat.</p>
+  </div>
+
+  <div class="content-box">
+    <h2>📅 Perjalanan Sejarah</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2008</div>
+        <div class="timeline-title">Pembentukan Unit Pendidikan</div>
+        <div class="timeline-desc">Unit Fungsional Pendidikan RSCM resmi dibentuk sebagai bagian dari struktur organisasi RSUP Nasional Dr. Cipto Mangunkusumo untuk mengelola kegiatan pendidikan dan pelatihan tenaga kesehatan.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2011</div>
+        <div class="timeline-title">Pengembangan Program Pertama</div>
+        <div class="timeline-desc">UFP RSCM meluncurkan program pendidikan formal pertama bekerja sama dengan Fakultas Kedokteran Universitas Indonesia, membuka era baru pendidikan kesehatan terpadu di RSCM.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2014</div>
+        <div class="timeline-title">Akreditasi & Pengakuan Nasional</div>
+        <div class="timeline-desc">UFP RSCM mendapatkan akreditasi nasional sebagai pusat pendidikan kesehatan terkemuka, dengan diakuinya berbagai program pelatihan oleh Kementerian Kesehatan Republik Indonesia.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2017</div>
+        <div class="timeline-title">Ekspansi Program & Fasilitas</div>
+        <div class="timeline-desc">Pembangunan fasilitas pembelajaran modern dan perluasan program ke bidang teknologi kesehatan, manajemen rumah sakit, dan penelitian klinis untuk memenuhi kebutuhan tenaga kesehatan masa depan.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2020</div>
+        <div class="timeline-title">Transformasi Digital</div>
+        <div class="timeline-desc">UFP RSCM beradaptasi dengan era pandemi melalui pengembangan platform pembelajaran digital, memungkinkan pendidikan jarak jauh yang efektif bagi seluruh tenaga kesehatan RSCM.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2023</div>
+        <div class="timeline-title">Inovasi & Kolaborasi Internasional</div>
+        <div class="timeline-desc">Penandatanganan MoU dengan beberapa institusi pendidikan internasional untuk pertukaran pengetahuan dan pengembangan kurikulum berbasis standar global dalam bidang pendidikan kesehatan.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">UFP RSCM Hari Ini</div>
+        <div class="timeline-desc">Saat ini UFP RSCM telah berkembang menjadi pusat pendidikan kesehatan terdepan dengan lebih dari 1.200 peserta didik aktif, 85 tenaga pendidik profesional, dan 12 program pendidikan unggulan.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-box">
+    <h2>🎯 Pencapaian Utama</h2>
+    <div class="card-grid-3" style="margin-top:20px;">
+      <div class="card-item">
+        <div class="card-img">🏆</div>
+        <h3>Penghargaan Nasional</h3>
+        <p>Penerima penghargaan unit pendidikan rumah sakit terbaik dari Kementerian Kesehatan RI selama 3 tahun berturut-turut.</p>
+      </div>
+      <div class="card-item">
+        <div class="card-img">🤝</div>
+        <h3>Kerja Sama</h3>
+        <p>Terjalinnya kerja sama dengan 25+ institusi pendidikan dan kesehatan nasional maupun internasional.</p>
+      </div>
+      <div class="card-item">
+        <div class="card-img">📊</div>
+        <h3>Lulusan</h3>
+        <p>Lebih dari 5.000 tenaga kesehatan telah mengikuti program pendidikan dan pelatihan UFP RSCM sejak berdiri.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li><li><a href="jadwal.html">Jadwal Kegiatan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="pengumuman.html">Pengumuman</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

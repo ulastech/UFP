@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman - UFP RSCM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .pengumuman-card { background: var(--white); border-radius: 14px; border: 1px solid var(--border); padding: 24px 28px; margin-bottom: 20px; display: flex; gap: 20px; align-items: flex-start; transition: box-shadow 0.25s, border-color 0.25s; }
+    .pengumuman-card:hover { box-shadow: 0 8px 24px rgba(11,31,58,0.08); border-color: var(--teal); }
+    .pengumuman-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; flex-shrink: 0; }
+    .pengumuman-icon.penting { background: rgba(220,38,38,0.1); }
+    .pengumuman-icon.info { background: rgba(42,168,126,0.1); }
+    .pengumuman-icon.umum { background: rgba(201,153,58,0.1); }
+    .pengumuman-badge { display: inline-block; font-size: 0.7rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 3px 9px; border-radius: 100px; margin-bottom: 8px; }
+    .badge-penting { background: rgba(220,38,38,0.1); color: #DC2626; }
+    .badge-info { background: rgba(42,168,126,0.1); color: var(--teal); }
+    .badge-umum { background: rgba(201,153,58,0.1); color: #C9993A; }
+    .pengumuman-title { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .pengumuman-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.7; margin-bottom: 10px; }
+    .pengumuman-meta { font-size: 0.76rem; color: #aaa; }
+    .filter-bar { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 18px; border-radius: 100px; border: 2px solid var(--border); background: var(--white); font-size: 0.82rem; font-weight: 600; cursor: pointer; color: var(--muted); font-family: inherit; transition: all 0.2s; }
+    .filter-btn.active, .filter-btn:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
+  </style>
+</head>
+<body>
+<nav id="navbar"><div class="nav-inner"><div class="nav-brand"><img src="logo.png" alt="Logo" onerror="this.style.display='none'"><span class="brand-text">UFP RSCM</span></div><button class="hamburger" onclick="toggleMenu()">☰</button><ul class="nav-menu" id="navMenu"><li><a href="index.html">Beranda</a></li><li class="dropdown"><a href="#">Profil ▾</a><ul class="submenu"><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></li><li class="dropdown"><a href="#">Program ▾</a><ul class="submenu"><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li></ul></li><li class="dropdown"><a href="#">Kegiatan ▾</a><ul class="submenu"><li><a href="jadwal.html">Jadwal Kegiatan</a></li><li><a href="pengumuman.html">Pengumuman</a></li></ul></li><li><a href="berita.html">Berita</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html" class="nav-cta">Hubungi Kami</a></li></ul></div></nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> <span>›</span> Kegiatan <span>›</span> Pengumuman</div>
+    <h1>Pengumuman</h1>
+    <p>Informasi resmi dan pengumuman terbaru dari Unit Fungsional Pendidikan RSCM</p>
+  </div>
+</div>
+
+<div class="page-content">
+  <div class="content-box">
+    <div class="filter-bar">
+      <button class="filter-btn active">Semua</button>
+      <button class="filter-btn">Penting</button>
+      <button class="filter-btn">Informasi</button>
+      <button class="filter-btn">Umum</button>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon penting">🔴</div>
+      <div>
+        <span class="pengumuman-badge badge-penting">Penting</span>
+        <div class="pengumuman-title">Pendaftaran Program Pendidikan Tahun Ajaran 2026/2027 Resmi Dibuka</div>
+        <div class="pengumuman-desc">UFP RSCM membuka pendaftaran resmi untuk seluruh program pendidikan dan pelatihan tahun ajaran 2026/2027. Kuota terbatas untuk setiap program. Pendaftaran dibuka mulai 1 Mei hingga 30 Juni 2026. Peserta wajib melengkapi seluruh dokumen persyaratan sebelum batas waktu yang ditentukan.</div>
+        <div class="pengumuman-meta">📅 5 April 2026 &nbsp;·&nbsp; 👁 1.240 Dilihat</div>
+      </div>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon info">🟢</div>
+      <div>
+        <span class="pengumuman-badge badge-info">Informasi</span>
+        <div class="pengumuman-title">Jadwal Ujian Kompetensi Semester Genap 2025/2026</div>
+        <div class="pengumuman-desc">Ujian kompetensi semester genap akan dilaksanakan pada 20–30 April 2026. Peserta wajib mendaftar ujian melalui sistem online paling lambat 15 April 2026. Jadwal detail per program dapat diakses melalui portal akademik UFP RSCM.</div>
+        <div class="pengumuman-meta">📅 1 April 2026 &nbsp;·&nbsp; 👁 892 Dilihat</div>
+      </div>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon info">🟢</div>
+      <div>
+        <span class="pengumuman-badge badge-info">Informasi</span>
+        <div class="pengumuman-title">Perubahan Jadwal Workshop BLS April 2026</div>
+        <div class="pengumuman-desc">Sehubungan dengan adanya kegiatan institusional, jadwal Workshop Basic Life Support yang semula dijadwalkan 15–16 April 2026 diundur menjadi 17–18 April 2026. Tempat dan materi tidak berubah. Peserta yang sudah terdaftar tidak perlu mendaftar ulang.</div>
+        <div class="pengumuman-meta">📅 28 Maret 2026 &nbsp;·&nbsp; 👁 456 Dilihat</div>
+      </div>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon umum">🟡</div>
+      <div>
+        <span class="pengumuman-badge badge-umum">Umum</span>
+        <div class="pengumuman-title">Pembaruan Sistem Portal Akademik UFP RSCM</div>
+        <div class="pengumuman-desc">Portal akademik UFP RSCM akan menjalani pembaruan sistem pada 20 April 2026 pukul 22.00 – 06.00 WIB. Selama pembaruan berlangsung, layanan portal tidak dapat diakses. Mohon menyelesaikan keperluan akademik sebelum waktu tersebut.</div>
+        <div class="pengumuman-meta">📅 15 Maret 2026 &nbsp;·&nbsp; 👁 678 Dilihat</div>
+      </div>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon penting">🔴</div>
+      <div>
+        <span class="pengumuman-badge badge-penting">Penting</span>
+        <div class="pengumuman-title">Batas Akhir Pengumpulan Karya Tulis Ilmiah Semester Genap</div>
+        <div class="pengumuman-desc">Peserta didik yang menyelesaikan program pada semester genap 2025/2026 diwajibkan mengumpulkan karya tulis ilmiah paling lambat 10 Mei 2026 melalui portal akademik. Karya tulis yang terlambat tidak akan diproses untuk kelulusan.</div>
+        <div class="pengumuman-meta">📅 10 Maret 2026 &nbsp;·&nbsp; 👁 1.102 Dilihat</div>
+      </div>
+    </div>
+
+    <div class="pengumuman-card">
+      <div class="pengumuman-icon umum">🟡</div>
+      <div>
+        <span class="pengumuman-badge badge-umum">Umum</span>
+        <div class="pengumuman-title">Beasiswa Pendidikan Lanjut bagi Tenaga Kesehatan RSCM</div>
+        <div class="pengumuman-desc">RSCM membuka program beasiswa pendidikan lanjut (S2/S3) bagi tenaga kesehatan berprestasi. Pendaftaran dibuka hingga 30 April 2026. Informasi lengkap dan formulir pendaftaran tersedia di Bagian SDM RSCM atau hubungi UFP RSCM.</div>
+        <div class="pengumuman-meta">📅 1 Maret 2026 &nbsp;·&nbsp; 👁 2.340 Dilihat</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="footer"><div class="footer-inner"><div class="footer-brand"><h3>🏛️ Unit Fungsional Pendidikan RSCM</h3><p>RSCM Gedung H Lt. 2 - Jl. Diponegoro No. 71 Jakarta Pusat</p><div class="footer-contact"><span>📞 (021) 1500-135</span><span>✉️ info@ufp.my.id</span></div></div><div class="footer-col"><h4>Profil</h4><ul><li><a href="sejarah.html">Sejarah</a></li><li><a href="visi-misi.html">Visi &amp; Misi</a></li><li><a href="struktur.html">Struktur Organisasi</a></li><li><a href="galeri.html">Galeri</a></li></ul></div><div class="footer-col"><h4>Program</h4><ul><li><a href="program.html">Program Pendidikan</a></li><li><a href="pelatihan.html">Pelatihan &amp; Workshop</a></li><li><a href="penelitian.html">Penelitian</a></li><li><a href="jadwal.html">Jadwal Kegiatan</a></li></ul></div><div class="footer-col"><h4>Informasi</h4><ul><li><a href="berita.html">Berita</a></li><li><a href="pengumuman.html">Pengumuman</a></li><li><a href="dokumen.html">Dokumen</a></li><li><a href="kontak.html">Kontak</a></li></ul></div></div><div class="footer-bottom"><p>© 2026 Unit Fungsional Pendidikan RSCM. Hak cipta dilindungi undang-undang.</p></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
